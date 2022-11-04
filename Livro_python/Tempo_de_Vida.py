@@ -20,11 +20,13 @@ BASE_YEARS = 85
 TIME_LEFT = 0
 smoker = input("Voce Fuma? [S/N]")
 
-if smoker == "n" or "N": 
+if (smoker == "n") or (smoker =="N"): 
     TIME_LEFT = BASE_YEARS - age_person
     print(f"Seu Tempo restante de vida é: {TIME_LEFT}")
+elif ( smoker != "s") and (smoker != "S") and (smoker != "n") and (smoker != "N"):
+    print("Erro. tente novamente")
 else: 
-    smoker == "s" or "S"
+    (smoker == "s") or (smoker =="S")
     cigarettes_a_day = int(input("Quantos Cigarros você fuma por dia? "))
 
 
